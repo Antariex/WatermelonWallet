@@ -1,4 +1,4 @@
-package com.myapp.watermelonwallet.ui.home
+package com.myapp.watermelonwallet.ui.wallets
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

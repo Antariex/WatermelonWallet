@@ -1,4 +1,4 @@
-package com.myapp.watermelonwallet.ui.home
+package com.myapp.watermelonwallet.ui.info
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.myapp.watermelonwallet.databinding.FragmentWalletsBinding
+import com.myapp.watermelonwallet.databinding.FragmentInfoBinding
 
-class HomeFragment : Fragment() {
+class InfoFragment : Fragment() {
 
-    private var _binding: FragmentWalletsBinding? = null
+    private var _binding: FragmentInfoBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +22,14 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val walletsViewModel =
-            ViewModelProvider(this).get(WalletsViewModel::class.java)
+        val infoViewModel =
+            ViewModelProvider(this).get(InfoViewModel::class.java)
 
-        _binding = FragmentWalletsBinding.inflate(inflater, container, false)
+        _binding = FragmentInfoBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        walletsViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textNotifications
+        infoViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

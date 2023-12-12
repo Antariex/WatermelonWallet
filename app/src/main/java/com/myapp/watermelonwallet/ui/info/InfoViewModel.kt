@@ -1,4 +1,4 @@
-package com.myapp.watermelonwallet.ui.notifications
+package com.myapp.watermelonwallet.ui.info
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
