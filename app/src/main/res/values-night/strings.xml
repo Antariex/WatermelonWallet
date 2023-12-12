@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hola_te_damos_la_bienvenida">¡Hola! Te damos la bienvenida</string>
+    <string name="watermelon_wallet_logo">Watermelon Wallet Logo</string>
+    <string name="tu_usuario">Tu usuario</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="tu_clave_watermelon_wallet">Tu clave Watermelon Wallet</string>
+</resources>

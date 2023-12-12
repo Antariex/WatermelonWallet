@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Watermelon Wallet</string>
+    <string name="hola_te_damos_la_bienvenida">¡Hola! Te damos la bienvenida</string>
+    <string name="watermelon_wallet_logo">Watermelon Wallet Logo</string>
+    <string name="tu_usuario">Tu usuario</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="tu_clave_watermelon_wallet">Tu clave Watermelon Wallet</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_wallets">Wallets</string>
+    <string name="title_info">Info</string>
+</resources>
