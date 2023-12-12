@@ -9,4 +9,7 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_wallets">Wallets</string>
     <string name="title_info">Info</string>
+    <string name="agregar_wallet">Agregar Wallet</string>
+    <string name="monto">Monto</string>
+    <string name="nombre">Nombre</string>
 </resources>

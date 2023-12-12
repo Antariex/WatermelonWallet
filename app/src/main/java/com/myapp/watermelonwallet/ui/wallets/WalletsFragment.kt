@@ -1,20 +1,18 @@
 package com.myapp.watermelonwallet.ui.wallets
 
+import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.myapp.watermelonwallet.R
 import com.myapp.watermelonwallet.databinding.FragmentWalletsBinding
+import com.myapp.watermelonwallet.ui.WalletActivity
 
 class WalletsFragment : Fragment() {
 
     private var _binding: FragmentWalletsBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -22,8 +20,7 @@ class WalletsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val walletsViewModel =
-            ViewModelProvider(this).get(WalletsViewModel::class.java)
+        val walletsViewModel = ViewModelProvider(this).get(WalletsViewModel::class.java)
 
         _binding = FragmentWalletsBinding.inflate(inflater, container, false)
         val root: View = binding.root
@@ -38,5 +35,27 @@ class WalletsFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)  // Indica que este Fragment tiene un menú
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.wallets_menu, menu)  // Infla el menú específico
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_add_wallet -> {
+                // Manejar el clic del nuevo ítem de menú
+                val intent = Intent(requireContext(), WalletActivity::class.java)
+                startActivity(intent)
+                return true
+            }
+            else -> return super.onOptionsItemSelected(item)
+        }
     }
 }
