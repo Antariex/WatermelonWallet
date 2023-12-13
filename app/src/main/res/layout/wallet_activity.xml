@@ -9,7 +9,7 @@
 
     <EditText
         android:id="@+id/editTextName"
-        style="@android:style/Widget.Holo.EditText"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/nombre"
@@ -19,7 +19,7 @@
 
     <EditText
         android:id="@+id/editTextAmount"
-        style="@android:style/Widget.Holo.EditText"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/monto"
@@ -30,7 +30,7 @@
 
     <Spinner
         android:id="@+id/spinnerCurrency"
-        style="@android:style/Widget.DeviceDefault.Light.Spinner"
+        style="@style/Widget.AppCompat.Spinner"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -40,6 +40,7 @@
 
     <Button
         android:id="@+id/buttonSave"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Guardar"
