@@ -39,18 +39,18 @@ class WalletsFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setHasOptionsMenu(true)  // Indica que este Fragment tiene un menú
+        setHasOptionsMenu(true)
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.wallets_menu, menu)  // Infla el menú específico
+        inflater.inflate(R.menu.wallets_menu, menu)
         super.onCreateOptionsMenu(menu, inflater)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_add_wallet -> {
-                // Manejar el clic del nuevo ítem de menú
+
                 val intent = Intent(requireContext(), WalletActivity::class.java)
                 startActivity(intent)
                 return true
