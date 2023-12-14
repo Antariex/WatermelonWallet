@@ -12,4 +12,5 @@
     <string name="agregar_wallet">Agregar Wallet</string>
     <string name="monto">Monto</string>
     <string name="nombre">Nombre</string>
+    <string name="cerrar_sesi_n">Cerrar sesión</string>
 </resources>

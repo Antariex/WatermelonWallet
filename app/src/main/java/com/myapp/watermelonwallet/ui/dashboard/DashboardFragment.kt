@@ -5,6 +5,7 @@ import android.view.*
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.myapp.watermelonwallet.MainActivity
 import com.myapp.watermelonwallet.databinding.FragmentDashboardBinding
 import com.myapp.watermelonwallet.R
 
@@ -45,4 +46,25 @@ class DashboardFragment : Fragment() {
         inflater.inflate(R.menu.logout_menu, menu)
         super.onCreateOptionsMenu(menu, inflater)
     }
+
+
+//    private fun logout() {
+//        clearSharedPreferences()
+//
+//        val intent = Intent(requireContext(), MainActivity::class.java)
+//        startActivity(intent)
+//
+//        activity?.finish()
+//    }
+//
+//    private fun clearSharedPreferences() {
+//        val prefs: SharedPreferences =
+//            activity?.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE) ?: return
+//        val editor = prefs.edit()
+//
+//        // TODO limpiar SharedPreferences
+//        editor.clear()
+//
+//        editor.apply()
+//    }
 }
