@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\ariel\\.gradle\\daemon\\8.2\\com.myapp.watermelonwallet.app-mergeDebugResources-47:\\layout\\fragment_info.xml",
+        "source": "C:\\Users\\ariel\\.gradle\\daemon\\8.2\\com.myapp.watermelonwallet.app-main-50:\\layout\\fragment_info.xml"
+    },
+    {
+        "merged": "com.myapp.watermelonwallet.app-mergeDebugResources-47:/layout/wallet_activity.xml",
+        "source": "com.myapp.watermelonwallet.app-main-50:/layout/wallet_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\ariel\\.gradle\\daemon\\8.2\\com.myapp.watermelonwallet.app-mergeDebugResources-47:\\layout\\wallet_activity.xml",
+        "source": "C:\\Users\\ariel\\.gradle\\daemon\\8.2\\com.myapp.watermelonwallet.app-main-50:\\layout\\wallet_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\ariel\\.gradle\\daemon\\8.2\\com.myapp.watermelonwallet.app-mergeDebugResources-47:\\layout\\fragment_dashboard.xml",
+        "source": "C:\\Users\\ariel\\.gradle\\daemon\\8.2\\com.myapp.watermelonwallet.app-main-50:\\layout\\fragment_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\ariel\\.gradle\\daemon\\8.2\\com.myapp.watermelonwallet.app-mergeDebugResources-47:\\layout\\fragment_wallets.xml",
+        "source": "C:\\Users\\ariel\\.gradle\\daemon\\8.2\\com.myapp.watermelonwallet.app-main-50:\\layout\\fragment_wallets.xml"
+    },
+    {
+        "merged": "C:\\Users\\ariel\\.gradle\\daemon\\8.2\\com.myapp.watermelonwallet.app-mergeDebugResources-47:\\layout\\activity_main2.xml",
+        "source": "C:\\Users\\ariel\\.gradle\\daemon\\8.2\\com.myapp.watermelonwallet.app-main-50:\\layout\\activity_main2.xml"
+    },
+    {
+        "merged": "C:\\Users\\ariel\\.gradle\\daemon\\8.2\\com.myapp.watermelonwallet.app-mergeDebugResources-47:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\ariel\\.gradle\\daemon\\8.2\\com.myapp.watermelonwallet.app-main-50:\\layout\\activity_main.xml"
+    }
+]

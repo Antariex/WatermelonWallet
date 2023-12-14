@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="agregar_wallet">Agregar Wallet</string>
+    <string name="app_name">Watermelon Wallet</string>
+    <string name="cerrar_sesi_n">Cerrar sesión</string>
+    <string name="hola_te_damos_la_bienvenida">¡Hola! Te damos la bienvenida</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="monto">Monto</string>
+    <string name="nombre">Nombre</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_info">Info</string>
+    <string name="title_wallets">Wallets</string>
+    <string name="tu_clave_watermelon_wallet">Tu clave Watermelon Wallet</string>
+    <string name="tu_usuario">Tu usuario</string>
+    <string name="watermelon_wallet_logo">Watermelon Wallet Logo</string>
+    <style name="Base.Theme.WatermelonWallet" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.WatermelonWallet" parent="Base.Theme.WatermelonWallet"/>
+</resources>
