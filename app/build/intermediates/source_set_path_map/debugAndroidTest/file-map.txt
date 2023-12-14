@@ -1,6 +1,0 @@
-com.myapp.watermelonwallet.test.app-annotation-experimental-1.3.0-0 C:\Users\ariel\.gradle\caches\transforms-3\72d7733d664d66b982667bb2e1914f47\transformed\annotation-experimental-1.3.0\res
-com.myapp.watermelonwallet.test.app-core-1.5.0-1 C:\Users\ariel\.gradle\caches\transforms-3\e7f51b2d6f33040a28eba9016681e3b0\transformed\core-1.5.0\res
-com.myapp.watermelonwallet.test.app-androidTest-2 C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\build\generated\res\resValues\androidTest\debug
-com.myapp.watermelonwallet.test.app-mergeDebugAndroidTestResources-3 C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.myapp.watermelonwallet.test.app-mergeDebugAndroidTestResources-4 C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.myapp.watermelonwallet.test.app-merged_res-5 C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\build\intermediates\merged_res\debugAndroidTest

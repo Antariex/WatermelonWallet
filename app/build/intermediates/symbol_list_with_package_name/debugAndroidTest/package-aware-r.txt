@@ -1,3 +1,0 @@
-com.myapp.watermelonwallet.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme
