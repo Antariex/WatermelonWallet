@@ -21,9 +21,11 @@
             style="@style/TextAppearance.MaterialComponents.Headline6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:text="Dólar Oficial" />
+            android:gravity="left"
+            android:text="Dólar Oficial"
+            android:textStyle="normal|bold" />
 
         <TextView
             android:id="@+id/amountOficial"
@@ -32,6 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
+            android:layout_marginTop="16dp"
             android:text="" />
 
     </LinearLayout>
@@ -47,9 +50,11 @@
             style="@style/TextAppearance.MaterialComponents.Headline6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:text="Dólar Blue" />
+            android:gravity="left"
+            android:text="Dólar Blue"
+            android:textStyle="normal|bold" />
 
         <TextView
             android:id="@+id/amountBlue"
@@ -58,6 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
+            android:layout_marginTop="16dp"
             android:text="" />
 
     </LinearLayout>
@@ -73,9 +79,11 @@
             style="@style/TextAppearance.MaterialComponents.Headline6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:text="Bitcoin" />
+            android:gravity="left"
+            android:text="Bitcoin"
+            android:textStyle="normal|bold" />
 
         <TextView
             android:id="@+id/amountBitcoin"
@@ -84,6 +92,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
+            android:layout_marginTop="16dp"
             android:text="" />
 
     </LinearLayout>
