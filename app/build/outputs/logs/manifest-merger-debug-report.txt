@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:2:1-35:12
 MERGED from [androidx.databinding:viewbinding:8.2.0] C:\Users\ariel\.gradle\caches\transforms-3\11261b67fd951b98708fa6f81ccb256f\transformed\viewbinding-8.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.7.5] C:\Users\ariel\.gradle\caches\transforms-3\c2e2cbe4167a0af72bf07c2f96032fc4\transformed\navigation-common-2.7.5\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.5] C:\Users\ariel\.gradle\caches\transforms-3\320e4d16abbfe49c435d0f1c992a104f\transformed\navigation-common-ktx-2.7.5\AndroidManifest.xml:2:1-7:12
@@ -73,9 +73,13 @@ MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\ariel\.
 		INJECTED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:5:5-31:19
-INJECTED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:5:5-31:19
+ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:7:5-33:19
+INJECTED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:7:5-33:19
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\ariel\.gradle\caches\transforms-3\bbb6ed546495f4e83d034f87cfcdfc0c\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\ariel\.gradle\caches\transforms-3\bbb6ed546495f4e83d034f87cfcdfc0c\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ariel\.gradle\caches\transforms-3\3a26d4b8ce626d96ddb5316f3e6285fd\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -99,53 +103,53 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ariel\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\ariel\.gradle\caches\transforms-3\9452251d7d504ac20ce5b90b4812e6bf\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:12:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:8:9-54
+		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:10:9-54
 	android:roundIcon
-		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:11:9-42
+		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:13:9-42
 	tools:targetApi
-		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:14:9-29
+		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:16:9-29
 	android:icon
-		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:9:9-37
+		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:11:9-37
 	android:allowBackup
-		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:15:9-54
 	android:dataExtractionRules
-		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:7:9-65
+		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:9:9-65
 activity#com.myapp.watermelonwallet.ui.WalletActivity
-ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:15:9-17:40
+ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:17:9-19:40
 	android:exported
-		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:17:13-37
+		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:16:13-46
+		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:18:13-46
 activity#com.myapp.watermelonwallet.MainActivity2
-ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:18:9-21:60
+ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:20:9-23:60
 	android:label
-		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:21:13-57
+		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:23:13-57
 	android:exported
-		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:20:13-37
+		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:19:13-42
+		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:21:13-42
 activity#com.myapp.watermelonwallet.MainActivity
-ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:22:9-30:20
+ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:24:9-32:20
 	android:exported
-		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:24:13-36
+		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:26:13-36
 	android:name
-		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:23:13-41
+		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:25:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:25:13-29:29
+ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:27:13-31:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:26:17-69
+ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:26:25-66
+		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:28:17-77
+ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:28:27-74
+		ADDED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml:30:27-74
 uses-sdk
 INJECTED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\ariel\AndroidStudioProjects\Watermelon_Wallet\app\src\main\AndroidManifest.xml
