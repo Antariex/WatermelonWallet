@@ -3,7 +3,6 @@ package com.myapp.watermelonwallet.ui
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -71,7 +70,7 @@ class WalletActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         val walletCurrency = currency[spinnerCurrency.selectedItemPosition]
 
         // Crear una nueva wallet con id, walletName, walletAmount y walletCurrency
-        val newWallet = Wallet(walletName, walletAmount, walletCurrency)
+        val newWallet = Wallet(0, walletName, walletAmount, walletCurrency)
 
         wallets.add(newWallet)
         saveWallets(wallets)
@@ -104,8 +103,5 @@ class WalletActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
         editor.putString(WALLET_KEY, walletsString)
         editor.apply()
-
-        // Imprimir las billeteras en el LogCat
-        Log.d("WalletActivity", "Wallets saved: $walletsString")
     }
 }
