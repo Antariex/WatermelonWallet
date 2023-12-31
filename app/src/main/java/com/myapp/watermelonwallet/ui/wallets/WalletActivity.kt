@@ -54,11 +54,9 @@ class WalletActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         position: Int,
         id: Long
     ) {
-        // Puedes realizar acciones cuando se selecciona un elemento en el spinner si es necesario
     }
 
     override fun onNothingSelected(parent: AdapterView<*>?) {
-        // Puedes realizar acciones si no se selecciona nada en el spinner
     }
 
     fun saveWallet(view: View) {

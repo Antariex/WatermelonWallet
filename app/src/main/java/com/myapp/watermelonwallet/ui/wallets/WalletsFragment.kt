@@ -26,7 +26,7 @@ class WalletsFragment : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var walletAdapter: WalletAdapter
-    private var wallets: MutableList<Wallet> = mutableListOf() // Initialize an empty list
+    private var wallets: MutableList<Wallet> = mutableListOf()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -39,7 +39,7 @@ class WalletsFragment : Fragment() {
         recyclerView = binding.recyclerView
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
-        wallets = getWalletsFromSharedPreferences() // Load wallets from SharedPreferences
+        wallets = getWalletsFromSharedPreferences()
 
         walletAdapter = WalletAdapter(wallets)
         recyclerView.adapter = walletAdapter

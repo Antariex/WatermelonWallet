@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
         btnLogin = findViewById(R.id.btnLogin)
         logo = findViewById(R.id.logo)
 
-        // Simulate autologin after a certain event (e.g., activity creation)
         autoLogin()
 
         btnLogin.setOnClickListener {
@@ -36,8 +35,7 @@ class MainActivity : AppCompatActivity() {
                     if (success) {
                         showToast("Login exitoso")
 
-                        // Move startActivity inside this block
-                        val intent = Intent(this@MainActivity, MainActivity2::class.java)
+                       val intent = Intent(this@MainActivity, MainActivity2::class.java)
                         startActivity(intent)
 
                     } else {
