@@ -1,23 +1,23 @@
 package com.myapp.watermelonwallet.ui.wallets
 
 data class Wallet(
-    var id: Int = 0,
+    var id: Long = 0,
     val walletName: String,
     val walletAmount: Float,
     val walletCurrency: String
 ) {
+    companion object {
+        private var nextId: Long = 1
+
+        fun getNextId(): Long {
+            return nextId++
+        }
+    }
+
     constructor(walletName: String, walletAmount: Float, walletCurrency: String) : this(
-        id = generateUniqueId(),
+        id = getNextId(),
         walletName = walletName,
         walletAmount = walletAmount,
         walletCurrency = walletCurrency
     )
-
-    companion object {
-        private var uniqueIdCounter = 0
-
-        private fun generateUniqueId(): Int {
-            return uniqueIdCounter++
-        }
-    }
 }
