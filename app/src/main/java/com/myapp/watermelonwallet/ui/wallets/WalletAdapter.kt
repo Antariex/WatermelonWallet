@@ -1,10 +1,10 @@
-// WalletAdapter.kt
 package com.myapp.watermelonwallet.ui.wallets
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.myapp.watermelonwallet.R
 
@@ -29,6 +29,14 @@ class WalletAdapter(private val wallets: List<Wallet>) :
         holder.walletName.text = wallet.walletName
         holder.walletAmount.text = wallet.walletAmount.toString()
         holder.walletCurrency.text = wallet.walletCurrency
+
+        // Cambiar el color de fondo para wallets impares
+        if (position % 2 != 0) {
+            holder.itemView.setBackgroundColor(ContextCompat.getColor(holder.itemView.context, R.color.colorOddWalletBackground))
+        } else {
+            // Restablecer el fondo predeterminado para wallets pares
+            holder.itemView.setBackgroundColor(ContextCompat.getColor(holder.itemView.context, android.R.color.white))
+        }
     }
 
     override fun getItemCount(): Int {

@@ -5,45 +5,46 @@
     android:orientation="vertical">
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
 
         <TextView
             android:id="@+id/walletNameTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Wallet Name"
+            android:text="@string/wallet_name"
             android:layout_marginEnd="12dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textSize="16sp"/>
 
         <TextView
             android:id="@+id/walletAmountTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Amount"
-            android:layout_marginEnd="8dp" />
+            android:text="@string/amount"
+            android:layout_marginEnd="8dp"
+            android:textSize="16sp"/>
 
         <TextView
             android:id="@+id/walletCurrencyTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Currency" />
+            android:text="@string/currency"
+            android:textSize="16sp"/>
 
     </LinearLayout>
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="8dp" />
+        android:layout_height="12dp" />
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginBottom="8dp">
-
 
     </LinearLayout>
 

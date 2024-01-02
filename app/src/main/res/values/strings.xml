@@ -13,4 +13,7 @@
     <string name="monto">Monto</string>
     <string name="nombre">Nombre</string>
     <string name="cerrar_sesi_n">Cerrar sesión</string>
+    <string name="wallet_name">Wallet Name</string>
+    <string name="amount">Amount</string>
+    <string name="currency">Currency</string>
 </resources>
