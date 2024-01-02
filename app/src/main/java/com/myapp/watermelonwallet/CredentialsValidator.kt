@@ -15,7 +15,7 @@ class CredentialsValidator {
 
                 val isValid = "admin" == username && "123456" == password
                 callback.onResult(isValid)
-            }, 2000)
+            }, 1000)
         }
     }
 }

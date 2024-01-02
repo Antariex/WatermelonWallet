@@ -1,6 +1,8 @@
 package com.myapp.watermelonwallet
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -14,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var editPassword: EditText
     private lateinit var btnLogin: Button
     private lateinit var logo: ImageView
+    private lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,8 +26,9 @@ class MainActivity : AppCompatActivity() {
         editPassword = findViewById(R.id.editPassword)
         btnLogin = findViewById(R.id.btnLogin)
         logo = findViewById(R.id.logo)
+        sharedPreferences = getPreferences(Context.MODE_PRIVATE)
 
-        autoLogin()
+        loadSavedCredentials() // Autollenado al inicio de la aplicación
 
         btnLogin.setOnClickListener {
             val username = editUsername.text.toString()
@@ -35,9 +39,10 @@ class MainActivity : AppCompatActivity() {
                     if (success) {
                         showToast("Login exitoso")
 
-                       val intent = Intent(this@MainActivity, MainActivity2::class.java)
-                        startActivity(intent)
+                        saveCredentials(username, password)
 
+                        val intent = Intent(this@MainActivity, MainActivity2::class.java)
+                        startActivity(intent)
                     } else {
                         showToast("Credenciales incorrectas")
                     }
@@ -46,22 +51,24 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun autoLogin() {
-        val defaultUsername = "admin"
-        val defaultPassword = "123456"
+    private fun loadSavedCredentials() {
+        val savedUsername = sharedPreferences.getString("username", null)
+        val savedPassword = sharedPreferences.getString("password", null)
 
-        CredentialsValidator.validateCredentials(defaultUsername, defaultPassword, object : CredentialsValidator.Callback {
-            override fun onResult(success: Boolean) {
-                if (success) {
+        savedUsername?.let {
+            editUsername.setText(it)
+        }
 
-                    val intent = Intent(this@MainActivity, MainActivity2::class.java)
-                    startActivity(intent)
+        savedPassword?.let {
+            editPassword.setText(it)
+        }
+    }
 
-                } else {
-                    showToast("Usuario o clave incorrectas")
-                }
-            }
-        })
+    private fun saveCredentials(username: String, password: String) {
+        val editor = sharedPreferences.edit()
+        editor.putString("username", username)
+        editor.putString("password", password)
+        editor.apply()
     }
 
     private fun showToast(message: String) {

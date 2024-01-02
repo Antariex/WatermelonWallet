@@ -16,4 +16,6 @@
     <string name="wallet_name">Wallet Name</string>
     <string name="amount">Amount</string>
     <string name="currency">Currency</string>
+    <string name="cotizaciones_actualizadas">Cotizaciones Actualizadas</string>
+    <string name="watermelon_wallet">Watermelon Wallet 🍉💰</string>
 </resources>
