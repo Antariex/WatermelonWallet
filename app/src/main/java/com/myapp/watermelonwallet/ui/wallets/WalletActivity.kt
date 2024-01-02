@@ -18,7 +18,7 @@ import com.myapp.watermelonwallet.ui.wallets.Wallet
 
 class WalletActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
-    private val currency = arrayOf("Pesos Argentinos", "Dólares estadounidenses", "BTC")
+    private val currency = arrayOf("Pesos Argentinos", "Dólares (US)", "Bitcoin")
 
     // SharedPreferences
     private val PREFS_NAME = "MyPrefsFile"

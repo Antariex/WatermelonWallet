@@ -8,7 +8,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:padding="8dp">
 
         <TextView
             android:id="@+id/walletNameTextView"
@@ -17,7 +18,7 @@
             android:text="@string/wallet_name"
             android:layout_marginEnd="12dp"
             android:textStyle="bold"
-            android:textSize="16sp"/>
+            android:textSize="20sp"/>
 
         <TextView
             android:id="@+id/walletAmountTextView"
@@ -25,20 +26,20 @@
             android:layout_height="wrap_content"
             android:text="@string/amount"
             android:layout_marginEnd="8dp"
-            android:textSize="16sp"/>
+            android:textSize="20sp"/>
 
         <TextView
             android:id="@+id/walletCurrencyTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/currency"
-            android:textSize="16sp"/>
+            android:textSize="20sp"/>
 
     </LinearLayout>
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="12dp" />
+        android:layout_height="16dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
