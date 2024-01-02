@@ -1,13 +1,19 @@
 package com.myapp.watermelonwallet.ui.dashboard
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
-import android.view.*
+import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.myapp.watermelonwallet.MainActivity
-import com.myapp.watermelonwallet.databinding.FragmentDashboardBinding
 import com.myapp.watermelonwallet.R
+import com.myapp.watermelonwallet.databinding.FragmentDashboardBinding
 
 class DashboardFragment : Fragment() {
 
@@ -47,24 +53,26 @@ class DashboardFragment : Fragment() {
         super.onCreateOptionsMenu(menu, inflater)
     }
 
+    private fun logoutUser() {
+        with(requireContext().getSharedPreferences("MyPrefs", Context.MODE_PRIVATE).edit()) {
+            remove("username")
+            remove("password")
+            apply()
+        }
 
-//    private fun logout() {
-//        clearSharedPreferences()
+        val intent = Intent(requireContext(), MainActivity::class.java)
+        startActivity(intent)
+        requireActivity().finish()
+    }
+
+//  private fun clearSharedPreferences() {
+//      val prefs: SharedPreferences =
+//          activity?.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE) ?: return
+//      val editor = prefs.edit()
 //
-//        val intent = Intent(requireContext(), MainActivity::class.java)
-//        startActivity(intent)
+//      // TODO limpiar SharedPreferences
+//      editor.clear()
 //
-//        activity?.finish()
-//    }
-//
-//    private fun clearSharedPreferences() {
-//        val prefs: SharedPreferences =
-//            activity?.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE) ?: return
-//        val editor = prefs.edit()
-//
-//        // TODO limpiar SharedPreferences
-//        editor.clear()
-//
-//        editor.apply()
-//    }
+//      editor.apply()
+//  }
 }

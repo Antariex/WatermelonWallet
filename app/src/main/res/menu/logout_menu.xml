@@ -5,6 +5,7 @@
         android:id="@+id/action_logout"
         android:title="@string/cerrar_sesi_n"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_logout_24dp"/>
+        android:icon="@drawable/ic_logout_24dp"
+        android:tint="@color/white"/>
 
 </menu>
