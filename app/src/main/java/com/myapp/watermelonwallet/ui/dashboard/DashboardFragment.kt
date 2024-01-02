@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
@@ -53,6 +54,16 @@ class DashboardFragment : Fragment() {
         super.onCreateOptionsMenu(menu, inflater)
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_logout -> {
+                logoutUser()
+                return true
+            }
+            else -> return super.onOptionsItemSelected(item)
+        }
+    }
+
     private fun logoutUser() {
         with(requireContext().getSharedPreferences("MyPrefs", Context.MODE_PRIVATE).edit()) {
             remove("username")
@@ -64,15 +75,4 @@ class DashboardFragment : Fragment() {
         startActivity(intent)
         requireActivity().finish()
     }
-
-//  private fun clearSharedPreferences() {
-//      val prefs: SharedPreferences =
-//          activity?.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE) ?: return
-//      val editor = prefs.edit()
-//
-//      // TODO limpiar SharedPreferences
-//      editor.clear()
-//
-//      editor.apply()
-//  }
 }
