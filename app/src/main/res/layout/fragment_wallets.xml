@@ -7,9 +7,9 @@
     android:layout_height="wrap_content"
     tools:context=".ui.wallets.WalletsFragment"
     android:orientation="vertical"
-    android:paddingStart="16dp"
+    android:paddingStart="8dp"
     android:paddingTop="16dp"
-    android:paddingEnd="16dp"
+    android:paddingEnd="8dp"
     android:paddingBottom="16dp">
 
     <TextView

@@ -8,7 +8,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.myapp.watermelonwallet.databinding.FragmentInfoBinding
-import okhttp3.*
+import okhttp3.Call
+import okhttp3.Callback
+import okhttp3.OkHttpClient
+import okhttp3.Request
+import okhttp3.Response
 import org.json.JSONObject
 import java.io.IOException
 
@@ -59,7 +63,7 @@ class InfoFragment : Fragment() {
                     val dollarToPeso = oficialObject.getDouble("value_avg")
 
                     activity?.runOnUiThread {
-                        tvDollarOfficialToPeso.text = "$ $dollarToPeso"
+                        tvDollarOfficialToPeso.text = String.format("%.2f", dollarToPeso)
                     }
                 } else {
                     Log.e("JSON_PARSING_ERROR", "No se encontró el valor 'value_avg' en el objeto 'oficial'")
@@ -88,7 +92,7 @@ class InfoFragment : Fragment() {
                     val dollarBlueToPeso = blueObject.getDouble("value_avg")
 
                     activity?.runOnUiThread {
-                        tvDollarBlueToPeso.text = "$ $dollarBlueToPeso"
+                        tvDollarBlueToPeso.text = String.format("%.2f", dollarBlueToPeso)
                     }
                 } else {
                     Log.e("JSON_PARSING_ERROR", "No se encontró el valor 'value_avg' en el objeto 'blue'")
@@ -114,20 +118,16 @@ class InfoFragment : Fragment() {
                 val dataArray = json?.optJSONArray("data")
                 if (dataArray != null && dataArray.length() > 0) {
                     val dataObject = dataArray.getJSONObject(0)
-                    val bitcoinToDollar = dataObject.getString("last")
+                    val bitcoinToDollar = dataObject.getString("last").toDouble()
+
                     activity?.runOnUiThread {
-                        tvBitcoinToDollar.text = "$ $bitcoinToDollar dollars"
+                        tvBitcoinToDollar.text = String.format("%.2f (USD)", bitcoinToDollar)
                     }
                 } else {
                     Log.e("JSON_PARSING_ERROR", "No se encontró el array 'data' o estaba vacío")
                 }
             }
         })
-    }
-
-    fun getUsdToPesoRate(): Double {
-        Log.d("InfoFragment", "getUsdToPesoRate: Returning rate")
-        return 1.0
     }
 
     override fun onDestroyView() {

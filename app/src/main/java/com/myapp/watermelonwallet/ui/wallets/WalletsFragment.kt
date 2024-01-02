@@ -1,5 +1,6 @@
 package com.myapp.watermelonwallet.ui.wallets
 
+import WalletAdapter
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -27,7 +28,6 @@ class WalletsFragment : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var walletAdapter: WalletAdapter
     private var wallets: MutableList<Wallet> = mutableListOf()
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -41,11 +41,16 @@ class WalletsFragment : Fragment() {
 
         wallets = getWalletsFromSharedPreferences()
 
-        walletAdapter = WalletAdapter(wallets)
-        recyclerView.adapter = walletAdapter
+        if (wallets.isEmpty()) {
+            val textView: TextView = binding.textHome
+            textView.text = "No hay billeteras agregadas"
+        } else {
+            walletAdapter = WalletAdapter(wallets)
+            recyclerView.adapter = walletAdapter
 
-        val textView: TextView = binding.textHome
-        textView.text = "Mis Billeteras"
+            val textView: TextView = binding.textHome
+            textView.text = "Mis Billeteras"
+        }
 
         return root
     }
@@ -83,6 +88,7 @@ class WalletsFragment : Fragment() {
                 startActivity(intent)
                 return true
             }
+
             else -> return super.onOptionsItemSelected(item)
         }
     }
